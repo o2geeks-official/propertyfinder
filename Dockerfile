@@ -9,7 +9,7 @@ WORKDIR /fastapi-app
 
 # Copy project configuration and source files
 COPY pyproject.toml README.md ./
-COPY edyouapp_api ./edyouapp_api
+COPY propertfinder_api ./propertfinder_api
 
 # Install uv, create a virtual environment, and install dependencies
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh && \
@@ -32,7 +32,7 @@ ENV PYTHONUNBUFFERED=1
 COPY --from=builder /fastapi-app/.venv ./.venv
 
 # Copy the application code
-COPY edyouapp_api ./edyouapp_api
+COPY propertfinder_api ./propertfinder_api
 
 # Activate the virtual environment
 ENV PATH="/fastapi-app/.venv/bin:$PATH"
@@ -41,4 +41,4 @@ ENV PATH="/fastapi-app/.venv/bin:$PATH"
 EXPOSE 8080
 
 # Run the application using uvicorn
-CMD ["uvicorn", "edyouapp_api.app:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "propertfinder_api.app:app", "--host", "0.0.0.0", "--port", "8080"]
