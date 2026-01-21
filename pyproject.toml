@@ -43,7 +43,7 @@ dev-dependencies = [
 ]
 
 [tool.rye.scripts]
-devserver = { cmd = "uvicorn propertfinder_api.app:app --reload --port 8080 --log-level debug", env-file = "env.local"}
+devserver = { cmd = "uvicorn propertfinder_api.app:app --reload --port 8081 --log-level debug", env-file = "env.local"}
 
 [tool.hatch.metadata]
 allow-direct-references = true

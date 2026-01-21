@@ -38,7 +38,7 @@ COPY propertfinder_api ./propertfinder_api
 ENV PATH="/fastapi-app/.venv/bin:$PATH"
 
 # Expose the application port
-EXPOSE 8080
+EXPOSE 8081
 
 # Run the application using uvicorn
-CMD ["uvicorn", "propertfinder_api.app:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "propertfinder_api.app:app", "--host", "0.0.0.0", "--port", "8081"]

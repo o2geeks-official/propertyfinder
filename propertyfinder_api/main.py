@@ -1,10 +1,10 @@
 from fastapi import FastAPI
-from propertyfinder_api.api.routers import auth
+from propertyfinder_api.api.routers.auth import router as auth_router
 
 app = FastAPI(title="PropertyFinder API")
 
-app.include_router(auth.router)
+app.include_router(auth_router)
 
-@app.get("/")
-async def root():
-    return {"message": "Welcome to PropertyFinder API"}
+@app.get("/health")
+def health():
+    return {"status": "ok"}
