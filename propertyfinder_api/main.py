@@ -2,7 +2,7 @@ import os
 
 import uvicorn
 
-from edyouapp_api.config import server as server_settings
+from propertyfinder_api.config import server as server_settings
 
 if __name__ == "__main__":
     log_level = os.getenv(

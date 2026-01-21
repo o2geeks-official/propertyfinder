@@ -7,13 +7,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import APIKeyHeader
 from loguru import logger
 
-from edyouapp_api.api.services.institutes import institute_service
-from edyouapp_api.config import settings
-from edyouapp_api.config.bugsnag import bugsnag as bugsnag_settings
-from edyouapp_api.config.security import Security
-from edyouapp_api.db.mongodb import MongoDB
-from edyouapp_api.exceptions import attach_exception_handler
-from edyouapp_api.log import init_logging
+from propertyfinder_api.api.services.institutes import institute_service
+from propertyfinder_api.config import settings
+from propertyfinder_api.config.bugsnag import bugsnag as bugsnag_settings
+from propertyfinder_api.config.security import Security
+from propertyfinder_api.db.mongodb import MongoDB
+from propertyfinder_api.exceptions import attach_exception_handler
+from propertyfinder_api.log import init_logging
 
 bugsnag.configure(
     api_key=bugsnag_settings.BUGSNAG_API_KEY,

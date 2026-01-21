@@ -4,7 +4,7 @@ import random
 import re
 from typing import Any
 
-from edyouapp_api.api.models.common import (
+from propertyfinder_api.api.models.common import (
     BaseStandardResponse,
 )
 

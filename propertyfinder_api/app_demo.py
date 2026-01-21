@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from edyouapp_api.api.models.notifications import ApnsPayloadModel
-from edyouapp_api.workers.apple_notifications import simple_apns, voip_apns
+from propertyfinder_api.api.models.notifications import ApnsPayloadModel
+from propertyfinder_api.workers.apple_notifications import simple_apns, voip_apns
 
 app = FastAPI()
 

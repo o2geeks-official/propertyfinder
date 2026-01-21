@@ -4,7 +4,7 @@ import sys
 
 from loguru import logger
 
-from edyouapp_api.config import settings
+from propertyfinder_api.config import settings
 
 
 class InterceptHandler(logging.Handler):
