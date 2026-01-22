@@ -59,6 +59,6 @@ Visit [http://localhost:8090/social](http://localhost:8080/auth) to access the S
 
 ## Author
 
-@Hassnat Ahmad
+@Abdul Wasay Sardar
 
 ---
