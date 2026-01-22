@@ -182,7 +182,7 @@
 
 ### Bug Fixes
 
-- add edyouapp.com to allowed hosts ([d1bb4c5](https://github.com/o2-edyou/edyouapp-api/commit/d1bb4c55db587e80845d0c75bf38a728cd548e60))
+- add edyouapp.com to allowed hosts ([d1bb4c5](https://github.com/o2-edyou/edyouapp-api/commit/d1bb4c55db587e80805d0c75bf38a728cd548e60))
 
 ## 1.0.0 (2023-02-16)
 

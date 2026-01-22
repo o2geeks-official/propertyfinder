@@ -9,7 +9,7 @@ WORKDIR /fastapi-app
 
 # Copy project configuration and source files
 COPY pyproject.toml README.md ./
-COPY propertfinder_api ./propertfinder_api
+COPY propertyfinder_api ./propertyfinder_api
 
 # Install uv, create a virtual environment, and install dependencies
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh && \
@@ -32,13 +32,13 @@ ENV PYTHONUNBUFFERED=1
 COPY --from=builder /fastapi-app/.venv ./.venv
 
 # Copy the application code
-COPY propertfinder_api ./propertfinder_api
+COPY propertyfinder_api ./propertyfinder_api
 
 # Activate the virtual environment
 ENV PATH="/fastapi-app/.venv/bin:$PATH"
 
 # Expose the application port
-EXPOSE 8081
+EXPOSE 8080
 
 # Run the application using uvicorn
-CMD ["uvicorn", "propertfinder_api.app:app", "--host", "0.0.0.0", "--port", "8081"]
+CMD ["uvicorn", "propertyfinder_api.app:app", "--host", "0.0.0.0", "--port", "8080"]

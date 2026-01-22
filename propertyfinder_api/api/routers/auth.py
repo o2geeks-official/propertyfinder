@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from propertyfinder_api.api.enum.auth import UserCreate, UserLogin, Token
-from services.auth import create_user, authenticate_user, create_token
-from db.client import db
+from propertyfinder_api.api.services.auth import create_user, authenticate_user, create_token
+from propertyfinder_api.db.client import db
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 

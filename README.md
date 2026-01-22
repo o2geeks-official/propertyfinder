@@ -55,7 +55,7 @@ pre-commit run --all-files
 docker-compose up -d
 ```
 
-Visit [http://localhost:8090/social](http://localhost:8081/auth) to access the Swagger documentation for the API.
+Visit [http://localhost:8090/social](http://localhost:8080/auth) to access the Swagger documentation for the API.
 
 ## Author
 

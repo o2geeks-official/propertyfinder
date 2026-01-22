@@ -1,8 +1,8 @@
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from jose import jwt
-from db.client import db
-from core.config import settings
+from propertyfinder_api.db.client import db
+from propertyfinder_api.core.config import settings
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
